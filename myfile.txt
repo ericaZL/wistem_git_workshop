@@ -1,0 +1,56 @@
+Last login: Wed Mar 15 21:53:20 on tty??
+v1020-wn-50-190:~ erical$ git config --global user.name "ericaZL"
+v1020-wn-50-190:~ erical$ git config --global user.email ericalongzy@gmail.com
+v1020-wn-50-190:~ erical$ cd Desktop
+v1020-wn-50-190:Desktop erical$ mkdir wistem_workshop
+v1020-wn-50-190:Desktop erical$ cd wistem_workshop
+v1020-wn-50-190:wistem_workshop erical$ mkdir git_lesson
+v1020-wn-50-190:wistem_workshop erical$ cd git_lesson
+v1020-wn-50-190:git_lesson erical$ git init
+Initialized empty Git repository in /Users/zinnial/Desktop/wistem_workshop/git_lesson/.git/
+v1020-wn-50-190:git_lesson erical$ git remote add origin https://github.com/ericaZL/wistem_git_workshop.git
+v1020-wn-50-190:git_lesson erical$ touch "myfile.txt"
+v1020-wn-50-190:git_lesson erical$ git add "myfile.txt"
+v1020-wn-50-190:git_lesson erical$ git commit -m "My first file"
+[master (root-commit) a29119b] My first file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 myfile.txt
+v1020-wn-50-190:git_lesson erical$ git push -u origin master
+Username for 'https://github.com': ericaZL
+Password for 'https://ericaZL@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/ericaZL/wistem_git_workshop.git/'
+v1020-wn-50-190:git_lesson erical$ pwd
+/Users/zinnial/Desktop/wistem_workshop/git_lesson
+v1020-wn-50-190:git_lesson erical$ git remote add origin https://github.com/ericaZL/wistem_git_workshop.git
+fatal: remote origin already exists.
+v1020-wn-50-190:git_lesson erical$ ls
+myfile.txt
+v1020-wn-50-190:git_lesson erical$ git add "myfile.txt" 
+v1020-wn-50-190:git_lesson erical$ git commit -m "My first file"
+On branch master
+nothing to commit, working tree clean
+v1020-wn-50-190:git_lesson erical$ git add "myfile.txt" 
+v1020-wn-50-190:git_lesson erical$ git commit -m "My first file"
+On branch master
+nothing to commit, working tree clean
+v1020-wn-50-190:git_lesson erical$ git add --all
+v1020-wn-50-190:git_lesson erical$ git push -u origin master
+Username for 'https://github.com': ericaZL 
+Password for 'https://ericaZL@github.com': 
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 216 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ericaZL/wistem_git_workshop.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+v1020-wn-50-190:git_lesson erical$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+v1020-wn-50-190:git_lesson erical$ git branch "landing_page"
+v1020-wn-50-190:git_lesson erical$ git pull
+Already up-to-date.
+v1020-wn-50-190:git_lesson erical$ git checkout "branchname"
+error: pathspec 'branchname' did not match any file(s) known to git.
+v1020-wn-50-190:git_lesson erical$ 
